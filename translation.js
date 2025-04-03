@@ -1,8 +1,6 @@
-// import { HfInference } from "@huggingface/inference";
-import { HfInference } from "https://cdn.skypack.dev/@huggingface/inference";
-console.log("Loading API key...");
+import { HfInference } from "@huggingface/inference";
+// import { HfInference } from "https://cdn.skypack.dev/@huggingface/inference";
 const API_KEY = import.meta.env.VITE_HF_API_KEY;
-console.log("VITE_HF_API_KEY:", API_KEY);
 
 if (!API_KEY) {
   console.error(
