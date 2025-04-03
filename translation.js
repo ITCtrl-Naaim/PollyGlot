@@ -1,10 +1,11 @@
 import { HfInference } from "@huggingface/inference";
+console.log('Loading API key...');
 const API_KEY = import.meta.env.VITE_HF_API_KEY;
-// import { HfInference } from "https://cdn.skypack.dev/@huggingface/inference";
+console.log('VITE_HF_API_KEY:', API_KEY);
 
 if (!API_KEY) {
   console.error(
-    "Hugging Face API token is missing. Please set VITE_HUGGINGFACE_API_TOKEN in your environment."
+    "Hugging Face API token is missing. Please set VITE_HF_API_KEY in your environment."
   );
 }
 
