@@ -110,6 +110,7 @@ body > main > section fieldset ul li label {
 
 body > main > section fieldset ul li label img {
   border: 1px solid #ccc;
+  width: 2rem;
 }
 
 body > main > section fieldset ul li:not(:last-of-type) {
